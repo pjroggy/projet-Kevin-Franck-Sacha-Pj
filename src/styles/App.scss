@@ -52,7 +52,7 @@ aside>ul>li>button:last-of-type {
 
 button:active {
     transform-style: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
+    //-webkit-transform: translate(0px, 5px);
     border-bottom: 1px solid;
 }
 
