@@ -1,13 +1,17 @@
 
-function SideBar() {
+import Buttons from './Buttons'
+
+function SideBar({categories, setActiveCategory}) {
+  
   return (
-    <>
-      <h1>Dashboard des projets DeV</h1>
-      <button>Liste des eleves</button>
-      <button>Projet 1</button>
-      <button>Projet 2</button>
-      <button>Projet 3</button>
-    </>
+      <aside>
+          <h1>Dashboard des projets Dev</h1>
+          <ul>
+            {categories.map((category) => (
+              <Buttons category={category} setActiveCategory={setActiveCategory}/>
+            ))}
+          </ul>
+        </aside>
   );
 }
 
