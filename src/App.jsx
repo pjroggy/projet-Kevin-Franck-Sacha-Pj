@@ -1,12 +1,21 @@
+//import DataTable from './components/DataTable';
+import Footer from './components/Footer';
 import SideBar from './components/SideBar';
+import DataTable from './components/DataTable';
+import React from 'react';
+import "./App.scss";
 
-function App (){
+function App() {
   return (
-  <> 
-  <h1>coucou</h1>
-  <SideBar />
-  </>
-  );
+    <>
+      <body>
+        <SideBar/>
+        <DataTable />
+        <Footer />
+      </body>
+    </>
+  )
 }
+
 
 export default App;

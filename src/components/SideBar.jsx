@@ -2,11 +2,15 @@
 function SideBar() {
   return (
     <>
-      <h1>Dashboard des projets DeV</h1>
-      <button>Liste des eleves</button>
-      <button>Projet 1</button>
-      <button>Projet 2</button>
-      <button>Projet 3</button>
+      <aside>
+          <h1>Dashboard des projets Dev</h1>
+          <ul>
+            <li><button>Liste des eleves</button></li>
+            <li><button className='project'>Projet 1</button></li>
+            <li><button className='project'>Projet 2</button></li>
+            <li><button className='project'>Projet 3</button></li>
+          </ul>
+        </aside>
     </>
   );
 }
