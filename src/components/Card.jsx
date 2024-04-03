@@ -1,4 +1,4 @@
-
+import "../styles/App.scss";git pu
 
 function Card({ project }) {
 

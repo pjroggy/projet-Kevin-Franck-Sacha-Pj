@@ -1,14 +1,15 @@
 import Card from "./Card"
+import "../styles/App.scss";
 
 function DataTable({projects, activeCategory}) {
   return (
         <>
-        {projects.map((project) => activeCategory === project.category ? <p>coucou</p> : null)}
+        {projects.map((project) => activeCategory === project.category ? <Card key={project.title} project={project}/> : null)}
 
       </>
       )
       }
-     // <Card key={project.title} project={project}/>
+      
       export default DataTable;
 
           {/*<section>
