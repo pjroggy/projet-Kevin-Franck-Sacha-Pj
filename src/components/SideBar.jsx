@@ -1,18 +1,17 @@
-import MyButton from './MyButton'
 
-function SideBar({categories, activeCategory, setActiveCategory}) {
+import Buttons from './Buttons'
+
+function SideBar({categories, setActiveCategory}) {
+  
   return (
-    <>
       <aside>
           <h1>Dashboard des projets Dev</h1>
           <ul>
-            <li><button>Liste des eleves</button></li>
-            <li><button className='project'>Projet 1</button></li>
-            <li><button className='project'>Projet 2</button></li>
-            <li><button className='project'>Projet 3</button></li>
+            {categories.map((category) => (
+              <Buttons category={category} setActiveCategory={setActiveCategory}/>
+            ))}
           </ul>
         </aside>
-    </>
   );
 }
 
