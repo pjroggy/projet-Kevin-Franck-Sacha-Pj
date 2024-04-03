@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(src/font/Poppins-Regular.ttf);
+}
+
+:root {
+    --primaryColor: pink;
+    --secondaryColor: lightgrey;
+    --textColor: rgb(91, 91, 91);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}

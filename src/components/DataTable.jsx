@@ -59,4 +59,13 @@ function DataTable() {
         </>
     )
 }
-export default DataTable;
+
+function DataTable({categories, projects, activeCategory}) {
+    return (
+        <main>
+        </main>
+    )
+
+}
+
+export default DataTable

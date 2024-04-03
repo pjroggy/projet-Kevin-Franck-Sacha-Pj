@@ -1,5 +1,6 @@
+import MyButton from './MyButton'
 
-function SideBar() {
+function SideBar({categories, activeCategory, setActiveCategory}) {
   return (
     <>
       <aside>
