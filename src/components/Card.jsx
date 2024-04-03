@@ -1,4 +1,5 @@
-import "../styles/App.scss";git pu
+import "../styles/App.scss"
+import "../styles/Card.css"
 
 function Card({ project }) {
 
@@ -9,7 +10,7 @@ function Card({ project }) {
         <article>
             <h2>{title}</h2>
             <img src={img} alt={description} />
-            <h3> Equipe :</h3>
+            <p> Equipe :</p>
             <ul>
                 {teamName.map(member => <li>{member}</li>)}
             </ul>

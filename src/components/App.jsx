@@ -1,5 +1,3 @@
-
-import Footer from './Footer.jsx';
 import SideBar from './SideBar.jsx';
 import DataTable from './DataTable.jsx';
 import Projects from '../data/Data.js'
@@ -15,11 +13,10 @@ function App() {
   )
 
   return (
-    <>
-      <SideBar categories={categories} setActiveCategory={setActiveCategory}/>
-      <DataTable categories={categories} projects={Projects} activeCategory={activeCategory}/>
-      <Footer/>
-    </>
+    <div className='bodyWrapper'>
+      <SideBar categories={categories} setActiveCategory={setActiveCategory} />
+      <DataTable categories={categories} projects={Projects} activeCategory={activeCategory} />
+    </div>
   );
 }
 
