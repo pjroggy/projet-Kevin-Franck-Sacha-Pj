@@ -9,6 +9,11 @@
     --textColor: rgb(91, 91, 91);
 }
 
+#root {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;

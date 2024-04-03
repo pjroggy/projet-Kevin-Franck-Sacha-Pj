@@ -5,15 +5,19 @@ body {
 main {
     background-color: darkgrey;
     display: flex;
-    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
     gap: 1rem;
+    height: 100vh;
+    width: 75.3%;
 }
 
 aside {
     background-color: rgb(165, 182, 230);
     float: left;
-    width: 20vw;
-    height: 100%;
+    width: 20%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +26,13 @@ aside {
 main>article {
     background-color: lightgray;
     height: 100%;
+    flex: 1;
+    width: 23%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
 h1 {
@@ -64,15 +74,15 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h3 {
-    font-size: x-large;
-    margin-left: 3rem;
-}
-
 img {
-    width: 380px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
 }
 
 ul>li {
@@ -82,11 +92,16 @@ ul>li {
 }
 
 p {
-    font-size: x-large;
+    font-size: 1rem;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    margin: auto;
 }
 
 footer {
     background-color: darkgrey;
     height: 4rem;
-
 }
