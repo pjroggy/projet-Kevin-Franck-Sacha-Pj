@@ -1,31 +1,34 @@
 body {
-    overflow: auto;
+    height: 100vh;
+}
+
+main {
+    background-color: darkgrey;
+    display: flex;
+    padding: 3rem;
+    gap: 1rem;
 }
 
 aside {
     background-color: rgb(165, 182, 230);
     float: left;
-    width: 20rem;
-    height: 63rem;
+    width: 20vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+main>article {
+    background-color: lightgray;
+    height: 100%;
+    border-radius: 10px;
+}
+
 h1 {
-    font-size: 48px;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     text-align: center;
-    padding-top: 2rem;
-
 }
-
-aside>ul>li>button {
-    font-size: xx-large;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 
 ul>li>button {
     display: block;
@@ -43,7 +46,6 @@ ul>li>button {
 
 .project {
     padding: 1rem;
-    margin-bottom: 12rem;
 }
 
 aside>ul>li>button:last-of-type {
@@ -54,32 +56,6 @@ button:active {
     transform-style: translate(0px, 5px);
     //-webkit-transform: translate(0px, 5px);
     border-bottom: 1px solid;
-}
-
-section {
-    background-color: darkgrey;
-    overflow: hidden;
-    display: flex;
-
-}
-
-article:nth-child(1) {
-    margin-left: 4rem;
-
-}
-
-article:nth-child(4) {
-    margin-right: 4rem;
-}
-
-section>article {
-    background-color: lightgray;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    height: 50rem;
-    border-radius: 3ch;
 }
 
 h2 {
@@ -96,21 +72,21 @@ h3 {
 img {
     width: 380px;
     height: 250px;
+    object-fit: cover;
 }
 
 ul>li {
     list-style-type: none;
-    font-size: x-large;
+    font-size: 1rem;
     text-align: center;
 }
 
 p {
     font-size: x-large;
-    padding: 1rem;
 }
 
 footer {
     background-color: darkgrey;
-    height: 8rem;
+    height: 4rem;
 
 }

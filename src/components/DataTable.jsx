@@ -1,7 +1,6 @@
 function DataTable() {
     return (
-        <>
-            <section>
+        <main>
           <article>
             <h2>Projet Wild Eat</h2>
             <img src="src/assets/pubWildEat.png" alt="pub pour wwild eat" />
@@ -55,8 +54,7 @@ function DataTable() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit distinctio inventore sunt expedita hic, corrupti laboriosam quae vero architecto suscipit id neque saepe fugiat! Atque aperiam quidem possimus voluptate.</p>
             <a href="http://"></a>
           </article>
-        </section>
-        </>
+        </main>
     )
 }
 

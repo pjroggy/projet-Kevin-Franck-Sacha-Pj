@@ -15,11 +15,11 @@ function App() {
   )
 
   return (
-    <>
+    <div className='bodyWrapper'>
       <SideBar categories={categories} setActiveCategory={setActiveCategory}/>
       <DataTable categories={categories} projects={Projects} activeCategory={activeCategory}/>
       <Footer/>
-    </>
+    </div>
   );
 }
 
