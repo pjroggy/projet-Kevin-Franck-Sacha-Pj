@@ -1,7 +1,17 @@
-function DataTable() {
-    return (
+import Card from "./Card"
+
+function DataTable({projects, activeCategory}) {
+  return (
         <>
-            <section>
+        {projects.map((project) => activeCategory === project.category ? <p>coucou</p> : null)}
+
+      </>
+      )
+      }
+     // <Card key={project.title} project={project}/>
+      export default DataTable;
+
+          {/*<section>
           <article>
             <h2>Projet Wild Eat</h2>
             <img src="src/assets/pubWildEat.png" alt="pub pour wwild eat" />
@@ -55,17 +65,4 @@ function DataTable() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit distinctio inventore sunt expedita hic, corrupti laboriosam quae vero architecto suscipit id neque saepe fugiat! Atque aperiam quidem possimus voluptate.</p>
             <a href="http://"></a>
           </article>
-        </section>
-        </>
-    )
-}
-
-function DataTable({categories, projects, activeCategory}) {
-    return (
-        <main>
-        </main>
-    )
-
-}
-
-export default DataTable
+    </section>*/} 
